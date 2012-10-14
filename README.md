@@ -1,4 +1,4 @@
-stk1160-standalone
+stk1160-raspberrypi
 ==================
 
 stk1160 release 0.9.3\_for\_v3.2
@@ -22,8 +22,6 @@ You need to have this modules installed, but don't worry,
 you don't have to insert them manually:
 
 - snd\_usb\_audio
-- snd\_ac97\_codec
-- ac97\_bus
 - saa7115
 - videodev
 - videobuf2\_core
