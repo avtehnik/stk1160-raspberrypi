@@ -427,9 +427,8 @@ int stk1160_init_isoc(struct stk1160 *dev)
 #endif
 		if (!dev->isoc_ctl.transfer_buffer[i]) {
 			stk1160_err("cannot alloc %d bytes for tx buffer\n",
-				sb_size);
-				
-	/* Not enough transfer buffers, so just give up */
+				sb_size);				
+	               /* Not enough transfer buffers, so just give up */
                        if (i < STK1160_MIN_BUFS)
                        goto nomore_tx_bufs;
 				
