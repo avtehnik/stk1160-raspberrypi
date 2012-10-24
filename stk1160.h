@@ -27,10 +27,10 @@
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 
-#define STK1160_VERSION		"0.9.3"
-#define STK1160_VERSION_NUM	0x000903
+#define STK1160_VERSION		"0.9.5"
+#define STK1160_VERSION_NUM	0x000905
 
-/* TODO: Decide on number of packets for each buffer */
+/* Decide on number of packets for each buffer */
 #define STK1160_NUM_PACKETS 64
 
 /* Number of buffers for isoc transfers */
