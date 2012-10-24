@@ -1,4 +1,4 @@
-stk1160-raspberrypi 
+Stk1160-RaspberryPi 
 ============================
 Driver for EasyCap USB DVR forked from __Ezequiela Garcia driver__ and modified for __Raspberry Pi__ acc. to his instructions.
 
