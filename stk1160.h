@@ -37,6 +37,7 @@
 #define STK1160_NUM_BUFS 16 /*może max*/
 #define STK1160_MIN_BUFS 1
 
+
 /* TODO: This endpoint address should be retrieved */
 #define STK1160_EP_VIDEO 0x82
 #define STK1160_EP_AUDIO 0x81
