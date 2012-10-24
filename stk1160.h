@@ -34,7 +34,8 @@
 #define STK1160_NUM_PACKETS 64
 
 /* Number of buffers for isoc transfers */
-#define STK1160_NUM_BUFS 6 /* TODO */
+#define STK1160_NUM_BUFS 16 /*może max*/
+#define STK1160_MIN_BUFS 1
 
 /* TODO: This endpoint address should be retrieved */
 #define STK1160_EP_VIDEO 0x82
