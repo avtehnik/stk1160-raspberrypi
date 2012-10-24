@@ -1,7 +1,6 @@
 stk1160-raspberrypi 
 ============================
-
-Driver for EasyCap USB DVR forked from Ezequiela Garcia and modified for Raspberry Pi acc. to his instructions. 
+(Driver for EasyCap USB DVR forked from Ezequiela Garcia and modified for Raspberry Pi acc. to his instructions.) 
 
 
 stk1160 release 0.9.3\_for\_v3.2
