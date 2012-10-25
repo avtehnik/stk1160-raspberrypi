@@ -468,8 +468,6 @@ int stk1160_init_isoc(struct stk1160 *dev)
 	/* At last we can say we have some buffers */
 	dev->isoc_ctl.num_bufs = num_bufs;
 
-	return 0;
-}
 nomore_tx_bufs:
        /*
         * Failed to allocate desired buffer count. However, we may have
@@ -484,4 +482,4 @@ nomore_tx_bufs:
        dev->isoc_ctl.num_bufs = i-1;
 
        return 0;
-
+}
