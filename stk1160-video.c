@@ -431,7 +431,7 @@ int stk1160_init_isoc(struct stk1160 *dev)
 				sb_size);				
 	               /* Not enough transfer buffers, so just give up */
                        if (i < STK1160_MIN_BUFS)
-                       goto nomore_tx_bufs;
+				goto nomore_tx_bufs;
 				
 			stk1160_uninit_isoc(dev);
 			return -ENOMEM;
