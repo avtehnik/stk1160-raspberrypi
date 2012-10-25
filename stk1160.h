@@ -34,7 +34,7 @@
 #define STK1160_NUM_PACKETS 64
 
 /* Number of buffers for isoc transfers */
-#define STK1160_NUM_BUFS 16 /*może max*/
+#define STK1160_NUM_BUFS 16
 #define STK1160_MIN_BUFS 1
 
 
