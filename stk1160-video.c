@@ -467,7 +467,7 @@ int stk1160_init_isoc(struct stk1160 *dev)
 	/* At last we can say we have some buffers */
 	stk1160_dbg("%d urbs allocated\n", num_bufs);
 	dev->isoc_ctl.num_bufs = num_bufs;
-	
+	return 0;
 
 nomore_tx_bufs:
        /*
