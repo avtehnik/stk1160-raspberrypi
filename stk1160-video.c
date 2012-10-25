@@ -418,8 +418,7 @@ int stk1160_init_isoc(struct stk1160 *dev)
 			return -ENOMEM;
 		}
 		dev->isoc_ctl.urb[i] = urb;
-		stk1160_dbg("%d urbs allocated\n", num_bufs);
-		
+				
 #ifndef CONFIG_DMA_NONCOHERENT
 		dev->isoc_ctl.transfer_buffer[i] = usb_alloc_coherent(dev->udev,
 			sb_size, GFP_KERNEL, &urb->transfer_dma);
@@ -467,6 +466,7 @@ int stk1160_init_isoc(struct stk1160 *dev)
 
 	/* At last we can say we have some buffers */
 	dev->isoc_ctl.num_bufs = num_bufs;
+	stk1160_dbg("%d urbs allocated\n", num_bufs);
 
 nomore_tx_bufs:
        /*
