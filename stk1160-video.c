@@ -427,11 +427,13 @@ int stk1160_init_isoc(struct stk1160 *dev)
 //#endif
 		if (!dev->isoc_ctl.transfer_buffer[i]) {
 			stk1160_err("cannot alloc %d bytes for tx buffer\n",
-				sb_size);				
-	               /* Not enough transfer buffers, so just give up */
-                       if (i < STK1160_MIN_BUFS)
-				goto nomore_tx_bufs;
-				
+				sb_size);
+			/* Not enough transfer buffers, so just give up */
+                       if (i < STK1160_MIN_BUFS) {
+			stk1160_dbg("Before: nomore_tx_bufs");	
+			goto nomore_tx_bufs;
+			}	
+			
 			stk1160_uninit_isoc(dev);
 			return -ENOMEM;
 		}
@@ -478,7 +480,7 @@ nomore_tx_bufs:
        usb_free_urb(dev->isoc_ctl.urb[i]);
        dev->isoc_ctl.urb[i] = NULL;
 
-       stk1160_warn("%d urbs allocated. Trying to continue...\n", i-1);
+       stk1160_dbg("%d urbs allocated. Trying to continue...\n", i-1);
 
        dev->isoc_ctl.num_bufs = i-1;
 
