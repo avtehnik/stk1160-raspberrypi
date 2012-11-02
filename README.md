@@ -18,7 +18,6 @@ You need to have this modules installed, but don't worry,
 you don't have to insert them manually:
 
 - snd\_usb\_audio
-- ac97\_bus
 - saa7115
 - videodev
 - videobuf2\_core
