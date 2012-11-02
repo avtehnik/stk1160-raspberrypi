@@ -1,5 +1,5 @@
-stk1160-standalone
-==================
+stk1160-raspberrypi
+===================
 
 stk1160 release 0.9.3\_for\_v3.2
 
