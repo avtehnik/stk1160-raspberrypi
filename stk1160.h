@@ -192,6 +192,6 @@ int stk1160_read_reg_req_len(struct stk1160 *dev, u8 req, u16 reg,
 		char *buf, int len);
 
 /* Provided by stk1160-ac97.c */
-int stk1160_ac97_register(struct stk1160 *dev);
-int stk1160_ac97_unregister(struct stk1160 *dev);
+//int stk1160_ac97_register(struct stk1160 *dev);
+//int stk1160_ac97_unregister(struct stk1160 *dev);
 
